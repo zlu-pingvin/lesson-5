@@ -139,4 +139,37 @@
 #     n = int(input())
 # print(summ, count_max - count_min, sep='\n')
 
+# count = 0
+# for i in range(10):
+#     z = int(input())
+#     if z % 3 == 0 and z % 10 == 5:
+#         count += 1
+# print(count)
+
+# n = int(input())
+# zero = 0
+# min = 99
+# for i in range(n):
+#     z = int(input())
+#     if z < min and z > 0:
+#         min = z
+#     if z < -10:
+#         zero += 1
+# print(min)
+# [print('YES') if zero > 0 else print('NO')]
+
+# n = int(input())
+# count = 0
+# while n != 0:
+#     if n % 5 == 0 or n % 9 == 0:
+#         count += 1
+#     n = int(input())
+# print(count)
+
+# n, m = int(input()), int(input())
+# count = 0
+# for i in range(n, m + 1):
+#     if i % 2 == 0:
+#         count += 1
+# print(count)
 
