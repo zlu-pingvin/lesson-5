@@ -114,3 +114,17 @@ if __name__ == '__main__':
 # # g = [len(i) for i in s.split()]
 # # print(s)
 # # print(g)
+
+
+# n = int(input())  # Перевод из десятичной системы счисления в двоичную
+# b = ''
+# while n > 0:
+#     b = str(n % 2) + b
+#     n = n // 2
+# print(b)
+
+# https://stepik.org/lesson/311434/step/10?unit=293862
+# https://inf-ege.sdamgia.ru/test?theme=260
+
+
+
