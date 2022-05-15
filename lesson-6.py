@@ -89,12 +89,82 @@
 # first_p = per(a1, b1, c1)
 # second_p = per(a2, b2, c2)
 
-def per(a, b, c):
-    return a + b + c
+# def per(a, b, c):
+#     return a + b + c
 
 # a, b, c = map(int, input().split())
-print(per(a, b, c = map(int, input().split())))
+# print(per(a, b, c = map(int, input().split())))
 
+# def per(x, y, z):
+#     return x + y + z
+#
+# def s(a, b, c):
+#     p = (a + b + c) / 2
+#     return (p * (p - a) * (p - b) * (p - c)) ** 0.5
+#
+# a, b, c = map(int, input().split())
+# e, f, d = map(int, input().split())
+# first = per(a, b, c) + per(e, f, d)
+# second = s(a, b, c) + s(e, f, d)
+# print(first)
+# print(second)
+
+# def per(x, y, z):
+#     return x + y + z
+#
+# def s(a, b, c):
+#     p = (a + b + c) / 2
+#     return (p * (p - a) * (p - b) * (p - c)) ** 0.5
+#
+#
+# a, b, c = map(int, input().split())
+# d, e, f = map(int, input().split())
+#
+# first = per(a, b, c) + per(d, e, f)
+# second = s(a, b, c) + s(d, e, f)
+#
+# print(first)
+# print(second)
+
+# def s():
+#     for i in range(100, 1000):
+#         i = str(i)
+#         a = str(i[0])
+#         b = str(i[1])
+#         c = str(i[2])
+#         if int(a) + int(b) + int(c) == 10:
+#             print(i)
+#
+#
+# s()
+
+# def summ(a, b):
+#     x = int(a[0]) + int(a[1])
+#     y = int(b[0]) + int(b[1])
+#     if x > y:
+#         print('в первом числе сумма цифр больше')
+#     elif x < y:
+#         print('во втором числе сумма цифр больше')
+#     else:
+#         print('сумма цифр в числах одинакова')
+#
+# a, b = input().split()
+# summ(a, b)
+
+
+def sh(n, m):
+    count = 0
+    for i in range(n, m + 1):
+        i = str(i)
+        a, b, c = str(i[0]), str(i[1]), str(i[2])
+        x, y, z = str(i[3]), str(i[4]), str(i[5])
+        if int(a) + int(b) + int(c) == int(x) + int(y) + int(z):
+            count += 1
+    print(count)
+
+n, m = map(int, input().split())
+sh(n, m)
+sas
 
 
 
