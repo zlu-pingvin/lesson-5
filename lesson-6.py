@@ -89,11 +89,11 @@
 # first_p = per(a1, b1, c1)
 # second_p = per(a2, b2, c2)
 
-def per(a, b, c):
-    return a + b + c
+# def per(a, b, c):
+#     return a + b + c
 
 # a, b, c = map(int, input().split())
-print(per(a, b, c = map(int, input().split())))
+# print(per(a, b, c = map(int, input().split())))
 
 
 # def per(x, y, z):
@@ -538,14 +538,21 @@ print(per(a, b, c = map(int, input().split())))
 # x = int(input())
 # f(x)
 
-def f(n):
-    b = ''
-    b = str(n % 2) + b
-    n = n // 2
-    if n > 0:
-        f(n)
-    print(b, end='')
+# def f(n):
+#     b = ''
+#     b = str(n % 2) + b
+#     n = n // 2
+#     if n > 0:
+#         f(n)
+#     print(b, end='')
+#
+# n = int(input())
+# f(n)
 
-n = int(input())
-print(f(n))
-
+# def F(x, y):
+#     if x == y:
+#         return 1
+#     if x > y:
+#         return 0
+#     return F(x+2, y)+F(x*5, y)
+# print(F(2, 50))
