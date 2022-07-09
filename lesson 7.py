@@ -57,18 +57,18 @@
 #         s = s.replace("888", "2", 1)
 # print(s)
 
-s = '4' + '8' * 80
-while '18' in s or '288' in s or '3888' in s:
-    if '18' in s:
-        s = s.replace('18', '2', 1)
-    elif '288' in s:
-        s = s.replace('288', '3', 1)
-    elif '3888' in s:
-        s = s.replace('3888', '1', 1)
-    else:
-        print('alarm')
-        break
-print(s)
+# s = '1' + '8' * 80
+# while '18' in s or '288' in s or '3888' in s:
+#     if '18' in s:
+#         s = s.replace('18', '2', 1)
+#     elif '288' in s:
+#         s = s.replace('288', '3', 1)
+#     elif '3888' in s:
+#         s = s.replace('3888', '1', 1)
+#     else:
+#         print('alarm')
+#         break
+# print(s)
 
 # s = '1' + '8' * 80
 # while '18' in s or '288' in s or '3888' in s:
@@ -148,3 +148,37 @@ print(s)
 #     if alg(i) < 94:
 #         n = i
 # print(n)
+
+def alg(n):
+    y = int(bin(n)[2:])
+    x = 0
+    while y > 0:
+        x += y % 10
+        y //= 10
+    z = (bin(n)[2:]) + str(x % 2)
+    return z
+
+def alg_2(z):
+    x = 0
+    l = z
+    while l > 0:
+        x += l % 10
+        l //= 10
+    p = str(z) + str(x % 2)
+    return p
+
+
+n = 1
+z = int(alg(n))
+r = int(alg_2(z))
+print(z)
+print(r)
+
+for i in range(2, 110):
+    n += 1
+    # alg(n)
+    print(alg(n))
+    print(r)
+    print(alg_2(z))
+
+
