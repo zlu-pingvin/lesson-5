@@ -149,36 +149,72 @@
 #         n = i
 # print(n)
 
-def alg(n):
-    y = int(bin(n)[2:])
-    x = 0
-    while y > 0:
-        x += y % 10
-        y //= 10
-    z = (bin(n)[2:]) + str(x % 2)
-    return z
+# def alg(n):
+#     y = int(bin(n)[2:])
+#     x = 0
+#     while y > 0:
+#         x += y % 10
+#         y //= 10
+#     z = (bin(n)[2:]) + str(x % 2)
+#     return z
+#
+# def alg_2(z):
+#     x = 0
+#     l = z
+#     while l > 0:
+#         x += l % 10
+#         l //= 10
+#     p = str(z) + str(x % 2)
+#     return p
+#
+#
+# n = 0
+# z = int(alg(n))
+# r = int(alg_2(z))
+# # print(z)
+# # print(r)
+#
+# for i in range(1, 1000):
+#     # n += 1
+#     alg(n)
+#     # print(alg(n))
+#     if int((alg_2(int(alg(n)))), 2) > 55:
+#         print(int((alg_2(int(alg(n)))), 2))
+#         break
+#         # print(int(alg_2(int(alg(n)))))
+#     n += 1
 
-def alg_2(z):
-    x = 0
-    l = z
-    while l > 0:
-        x += l % 10
-        l //= 10
-    p = str(z) + str(x % 2)
-    return p
+# def alg(n):
+#     y = int(bin(n)[2:])
+#     x = 0
+#     while y > 0:
+#         x += y % 10
+#         y //= 10
+#     z = int((bin(n)[2:]) + str(x % 2))
+#     q = 0
+#     u = z
+#     while z > 0:
+#         q += z % 10
+#         z //= 10
+#     p = int(str(u) + str(q % 2))
+#     r = int(str(p), 2)
+#     return r
+#
+# n = int(input())
+# print(alg(n))
+
+def avtomat(n):
+    a = str(n // 100)
+    b = str(n // 10 % 10)
+    c = str(n % 10)
+    if a <= b <= c and a != 0:
+        x = a + b
+        y = c + b
+    return int(y) - int(x)
 
 
-n = 1
-z = int(alg(n))
-r = int(alg_2(z))
-print(z)
-print(r)
+n = int(input())
+print(avtomat(n))
 
-for i in range(2, 110):
-    n += 1
-    # alg(n)
-    print(alg(n))
-    print(r)
-    print(alg_2(z))
 
 
