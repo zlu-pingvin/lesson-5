@@ -203,18 +203,111 @@
 # n = int(input())
 # print(alg(n))
 
-def avtomat(n):
-    a = str(n // 100)
-    b = str(n // 10 % 10)
-    c = str(n % 10)
-    if a <= b <= c and a != 0:
-        x = a + b
-        y = c + b
-    return int(y) - int(x)
+# def avtomat(n):
+#     a = str(n // 100)
+#     b = str(n // 10 % 10)
+#     c = str(n % 10)
+#     if a <= b <= c and a != 0:
+#         x = a + b
+#         y = c + b
+#     return int(y) - int(x)
+#
+#
+# n = int(input())
+# print(avtomat(n))
+
+# def avtomat(n):
+#     list = []
+#     for j in n:
+#         list.append(j)
+#
+#     list = sorted(list)
+#
+#     a = list[2] + list[1]
+#     if list[0] != '0':
+#         b = list[0] + list[1]
+#     else:
+#         b = list[1] + list[0]
+#     return int(a) - int(b)
+#
+# x = int(input())
+# answer = 0
+# for i in range(100, 1000):
+#     if avtomat(str(i)) == x:
+#         answer = i
+# print(answer)
+
+# count = 0
+# for s1 in "АКРУ":
+#     for s2 in "АКРУ":
+#         for s3 in "АКРУ":
+#             for s4 in "АКРУ":
+#                 for s5 in "АКРУ":
+#                     count += 1
+#                     if count == 355:
+#                         print(s1 + s2 + s3 + s4 + s5)
+
+# count = 0
+# for s1 in 'ABCDX':
+#     for s2 in 'ABCDX':
+#         for s3 in 'ABCDX':
+#             for s4 in 'ABCDX':
+#                 for s5 in 'ABCDX':
+#                     if (s1 + s2 + s3 + s4 + s5).count('X') == 1:
+#                         count += 1
+                        # print(s1 + s2 + s3 + s4 + s5)
+                    # elif (s1 + s3 + s4 + s5).count('X') == 1:
+                    #     count += 1
+                    #     print(s1 + s3 + s4 + s5)
+                    # elif (s1 + s2 + s4 + s5).count('X') == 1:
+                    #     count += 1
+                    #     print(s1 + s2 + s4 + s5)
+                    # elif (s2 + s3 + s4 + s5).count('X') == 1:
+                    #     count += 1
+                    #     print(s2 + s3 + s4 + s5)
+                    # elif (s1 + s2 + s3 + s4).count('X') == 1:
+                    #     count += 1
+                    #     print(s1 + s2 + s3 + s4)
+# count = count / 5
+# print(str(count)[0:3])
+
+# count = 0
+# for s1 in 'ABCDX':
+#     for s2 in 'ABCDX':
+#         for s3 in 'ABCDX':
+#             for s4 in 'ABCDX':
+#                 s = s1 + s2 + s3 + s4
+#                 if s.count('X') == 1:
+#                     count += 1
+# print(count)
+
+# count = 0
+# for s1 in 'КОР':
+#     for s2 in 'КОР':
+#         for s3 in 'КОР':
+#             for s4 in 'КОР':
+#                 for s5 in 'КОР':
+#                     count += 1
+#                     if count == 237:
+#                         print(s1 + s2 + s3 + s4 + s5)
+
+# s = 'а г и л м о р т'
+# s = sorted(s)
+# print(*s)
+
+def abc():
+    count = 0
+    for s1 in 'АГИЛМОРТ':
+        for s2 in 'АГИЛМОРТ':
+            for s3 in 'АГИЛМОРТ':
+                for s4 in 'АГИЛМОРТ':
+                    count += 1
+                    print(s1 + s2 + s3 + s4)
+                    if 'ИГ' in s1 + s2 + s3 + s4:
+                        # print(count)
+                        return count
 
 
-n = int(input())
-print(avtomat(n))
-
+print(abc())
 
 
