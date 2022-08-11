@@ -295,19 +295,198 @@
 # s = sorted(s)
 # print(*s)
 
-def abc():
-    count = 0
-    for s1 in 'АГИЛМОРТ':
-        for s2 in 'АГИЛМОРТ':
-            for s3 in 'АГИЛМОРТ':
-                for s4 in 'АГИЛМОРТ':
-                    count += 1
-                    print(s1 + s2 + s3 + s4)
-                    if 'ИГ' in s1 + s2 + s3 + s4:
-                        # print(count)
-                        return count
+# def abc():
+#     count = 0
+#     for s1 in 'АГИЛМОРТ':
+#         for s2 in 'АГИЛМОРТ':
+#             for s3 in 'АГИЛМОРТ':
+#                 for s4 in 'АГИЛМОРТ':
+#                     count += 1
+#                     if 'ИГ' in s1 + s2:
+#                         return count
+#
+#
+# print(abc())
+
+# x = 125 ** 4 + 25 ** 10 - 33
+# s = ""
+# while x > 0:   # переводим число х в 5ю систему счисления
+#     s = str(x % 5) + s  # строка s - запись ответа в 5й СС
+#     x //= 5
+# print(s.count("4"))  # считаем количество "4" в строке s
+
+# x = 9 ** 12 + 3 ** 8 - 3
+# s = ''
+# while x > 0:
+#     s = str(x % 3) + s
+#     x //= 3
+# print(s.count('2'))
+
+# x = 9 ** 11 * 3 ** 20 - 3 ** 9 - 27
+# s = ''
+# while x > 0:
+#     s = str(x % 3) + s
+#     x //= 3
+# print(s.count('2'))
+
+# x = 4 ** 2025 + 2 ** 2007 - 17
+# s = ''
+# while x > 0:
+#     s = str(x % 2) + s
+#     x //= 2
+# print(s.count('1'))
+
+# def avt(n):
+#     a = int(n[0]) + int(n[1])
+#     b = int(n[1]) + int(n[2])
+#     if a >= b:
+#         return (str(a) + str(b)).split()
+#     else:
+#         return (str(b) + str(a)).split()
+#
+# for i in range(100, 1000):
+#     i = str(i)
+#     if avt(i) == ['1410']:
+#         print(i)
+#         break
 
 
-print(abc())
+# def avt(n):
+#     n = str(n)
+#     a = int(n[0]) + int(n[1])
+#     b = int(n[1]) + int(n[2])
+#     if a >= b:
+#         return str(a) + str(b)
+#     else:
+#         return str(b) + str(a)
+#
+# for i in range(100, 1000):
+#     if int(avt(i)) == 1410:
+#         print(i)
+#         break
+
+# def avt(n):
+#     a = n % 4
+#     b = n % 3
+#     c = n % 2
+#     return int(str(a) + str(b) + str(c))
+#
+# for i in range(10, 100):
+#     if avt(i) == 301:
+#         print(i)
+#         break
+
+# s = input()
+# count = 1
+# a = 0
+# b = 0
+# for i in range(len(s)):
+#     if s[i] == 'Z' == s[i - 1]:
+#         count += 1
+#         a = count
+#         if a >= b:
+#             b = a
+#     else:
+#         count = 1
+# print(b)
+
+# s = input()
+# count = 0
+# a = 0
+# b = 0
+# for i in range(len(s)):
+#     if s[i] == 'A' and s[i + 1] == 'B' and s[i + 2] == 'C':
+#         count += 3
+#         if s[i + 4] == 'A' and s[i + 5] == 'B' and s[i + 6] != 'C':
+#             count += 2
+#         elif s[i + 4] == 'A' and s[i + 5] != 'B':
+#             count += 1
+#         if count >= a:
+#             a = count
+#             if a >= b:
+#                 b = a
+#     else:
+#         count = 0
+# print(b)
+
+# s = input()  #https://stepik.org/lesson/411377/step/8?unit=400814
+# count_max = 0
+# abc = s.find('ABC')
+# count = 0
+# while abc < len(s):
+#     if s[abc:abc + 3] == 'ABC':
+#         count += 3
+#         abc += 2
+#     elif count:
+#         if s[abc:abc + 2] == 'AB':
+#             count += 2
+#             abc += 1
+#         elif s[abc] == 'A':
+#             count += 1
+#         count_max = max((count, count_max))
+#         count = 0
+#     abc += 1
+# print(count_max)
+
+# s = input()
+# summ = 0
+# for i in s:
+#     if i.isdigit():
+#         summ += int(i)
+# print(summ)
+
+# n, s = int(input()), input()  # Шифр Цезаря 🌶️  :(
+# for c in s:
+#     if ord(c) - n < 97:
+#         print(chr(122 - (96 - ord(c) + n)), end='')
+#     else:
+#         print(chr(ord(c) - n), end='')
 
 
+# r = input().split()
+# s = ' '.join(r)
+# n = min(r)
+# n = len(n)
+# for c in s:
+#     if ord(c) - n < 97:
+#         print(chr(122 - (96 - ord(c) + n)), end='')
+#     else:
+#         print(chr(ord(c) - n), end='')
+# print(n)
+
+n = input()
+
+s = n
+for j in n:
+    if j in '*,.!@"-':
+        s = s.replace(j, '')
+# g = [len(i) for i in s.split()]
+q = min(n.split())
+g = len(q)
+
+
+count = 0
+word_new = ''
+for d in n:
+    number = ord(d)
+    if d == ' ':
+        count += 1
+        word_new += chr(number)
+    elif 65 <= number <= 90:
+        number += g[count]
+        if number > 90:
+            number = number - 26
+            word_new += chr(number)
+        else:
+            word_new += chr(number)
+    elif 97 <= number <= 122:
+        number += g[count]
+        if number > 122:
+            number = number - 26
+            word_new += chr(number)
+        else:
+            word_new += chr(number)
+    else:
+        word_new += chr(number)
+
+print(word_new)
