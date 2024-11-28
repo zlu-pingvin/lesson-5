@@ -343,34 +343,123 @@
 # print(x - 1)
 
 # b m
-o = int(input())
-p = input().split()
-b = []
-k = int(input())
-l = input().split()
-g = []
+# o = int(input())
+# p = input().split()
+# b = []
+# k = int(input())
+# l = input().split()
+# g = []
+# x = 0
+# while len(b) < o:
+#     b.append(int((p[0])))
+#     del p[0]
+# b.sort()
+#
+# while len(g) < k:
+#     g.append(int((l[0])))
+#     del l[0]
+# g.sort()
+#
+# if len(b) < len(g):
+#     b, g = g, b
+#
+# while len(b) > 0 and len(g) > 0:
+#     if b[0] == g[0] or b[0] == g[0] or b[0] == g[0] + 1 or b[0] == g[0] - 1:
+#         x += 1
+#         del b[0]
+#         del g[0]
+#     else:
+#         if b[0] < g[0]:
+#             del b[0]
+#         else:
+#             del g[0]
+# print(x)
+
+# n = 4782
+# while n > 0:
+#     print(n%10)
+#     n = n//10
+
+# number = 73408
+# m = 0
+# s = 0
+# while number > 0:
+#     last_digit = number % 10
+#     s = s + last_digit
+#     if last_digit > m:
+#         m = last_digit
+#     number = number // 10
+# print(s + m)
+
+# n = int(input())
+# while n > 0:
+#     print(n % 10)
+#     n = n // 10
+
+# n = int(input())
+# x = 0
+# while n > 0:
+#     x += n % 10
+#     n //= 10
+# print(x)
+
+# n = int(input())
+# x = 1
+# while n > 0:
+#     x *= n % 10
+#     n //= 10
+# print(x)
+
+# n = int(input())
+# l = []
+# while n > 0:
+#     l.append(n % 10)
+#     n //= 10
+# print(min(l), max(l), sep='\n')
+
+# n = int(input())
+# count = 0
+# while n > 0:
+#     if n % 10 != 0 and n % 10 % 7 == 0:
+#         count += 1
+#     n //= 10
+# print(count)
+
+# n = int(input())
+# b = ''
+# while n > 0:
+#     b = str(n % 2) + b
+#     n = n // 2
+# b = int(b)
+# while b > 0:
+#     print(b % 10)
+#     b //= 10
+
+# n = int(input())
+# a = 1
+# while a <= n // 2:
+#     if n % a == 0:
+#         print(a, end=' ')
+#     a += 1
+# print(n)
+
+# n = int(input())
+# a = 1
+# count = 0
+# while a <= n // 2:
+#     if n % a == 0:
+#         count +=1
+#     a += 1
+# if n == 1 or count > 1:
+#     print('No')
+# else:
+#     print('Yes')
+
+n = int(input())
+a = 1
 x = 0
-while len(b) < o:
-    b.append(int((p[0])))
-    del p[0]
-b.sort()
-
-while len(g) < k:
-    g.append(int((l[0])))
-    del l[0]
-g.sort()
-
-if len(b) < len(g):
-    b, g = g, b
-
-while len(b) > 0 and len(g) > 0:
-    if b[0] == g[0] or b[0] == g[0] or b[0] == g[0] + 1 or b[0] == g[0] - 1:
-        x += 1
-        del b[0]
-        del g[0]
-    else:
-        if b[0] < g[0]:
-            del b[0]
-        else:
-            del g[0]
-print(x)
+while a <= n // 2:
+    if n % a == 0:
+        x += n // a
+    a += 1
+print(x + 1)
