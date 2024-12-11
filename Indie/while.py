@@ -455,11 +455,71 @@
 # else:
 #     print('Yes')
 
-n = int(input())
-a = 1
-x = 0
-while a <= n // 2:
-    if n % a == 0:
-        x += n // a
+# n = int(input())
+# a = 1
+# x = 0
+# while a <= n // 2:
+#     if n % a == 0:
+#         x += n // a
+#     a += 1
+# print(x + 1)
+
+# a = int(input('Введите первое число: '))
+# b = int(input('Введите второе число: '))
+# while a != b:
+#     if a > b:
+#         a = a - b
+#     else:
+#         b = b - a
+# print(f'Нод={a}')
+
+# a = int(input('Введите первое число: '))
+# b = int(input('Введите второе число: '))
+# while b > 0:
+#     c = a%b
+#     a = b
+#     b = c
+# print(f'Нод={a}')
+
+# a, b = input().split()
+# a = int(a)
+# b = int(b)
+# while b > 0:
+#     c = a % b
+#     a = b
+#     b = c
+# print(a)
+
+# a, b = map(int, input().split())  # НОК
+# c = b
+# while c % a > 0:
+#     c += b
+# print(c)
+
+# t = 7
+# while t > 1:
+#     t -= 1
+#     if t == 3:
+#         break
+#     print(t)
+
+# n = int(input())  # всі ділителі
+# i = 1
+# x = []
+# while i <= n:
+#     if n % i == 0:
+#         x.append(i)
+#     i+=1
+# print(x[1])
+
+a, b = int(input()), int(input())
+while a <= b:
+    if a == 777:
+        break
+    elif a % 2 == 0 or a % 3 == 0:
+        continue
+    # elif a == 777:
+    #     break
+    else:
+        print(a)
     a += 1
-print(x + 1)
